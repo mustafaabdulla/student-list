@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>te dhenat e nxenesve</title>
+    <script src="./apps.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista e nxenesve</h1>
+ <div>
+    <div><h4>Emri dhe mbiemri:</h4> <input type="texts" id="nameInput"></div>
+
+    <div><h4>Klasa:</h4> <input type="number" min="1" max="9" id="classInput"></div>
+
+    <div><h4>Gjinia:</h4> <label for="gender">
+    <select id="genderInput">
+     <option value="-----------">-----------</option>
+     <option value="Mashkullore">Mashkullore</option>
+     <option value="Femerore">Femerore</option>
+    </select>
+    </label></div>
+
+    <div><h4>Suksesi:</h4>  
+        <label>1</label><input name="suksesi" type="radio" value="1">
+        <label>2</label><input name="suksesi" type="radio" value="2">
+        <label>3</label><input name="suksesi" type="radio" value="3">
+        <label>4</label><input name="suksesi" type="radio" value="4">
+        <label>5</label><input name="suksesi" type="radio" value="5">
+    </div>
+ </div>
+
+ <button onclick="addStudent()">Shto nxenes</button>
+
+ <table border="1" id="table">
+ <tr>
+    <th>Emri dhe mbiemri</th>
+    <th>Klasa</th>
+    <th>Gjinia</th>
+    <th>Suksesi</th>
+ </tr>
+</table>
+</body>
+</html>
